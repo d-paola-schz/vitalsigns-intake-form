@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSigns Medical Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VitalSigns Medical Center</h1>
+    </header>
+    <main>
+        <section>
+            <p>Welcome to the VitalSigns Medical Center. Please insert the following data to complete your register: </p>
+            <form id="patient-data" action="submit" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john.doe@example.com" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8">
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="Birthdate" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="Height" min="30" max="250" placeholder= "e.g. 170">
+
+                <div class="gender-group">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="Gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="Gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="Gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="blood-type">Blood Type:</label>
+                <select id="blood-type" name="BloodType">
+                    <option value="" disabled selected>Select option</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="medical-history">Medical History:</label>
+                <textarea id="medical-history" name="MedicalHistory" placeholder="e.g. allergies"></textarea>
+                
+                <div class="consent-check">
+                    <label for="consent">Accept terms and conditions:</label>
+                    <input type="checkbox" id="consent" name="Consent" required>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+</body>

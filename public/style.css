@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif, arial;
+    padding : 0;
+    margin: 0;
+}
+
+body{
+    background-color: #dbeaef;
+    align-items :  center;
+    display: block;
+}
+
+header{
+    background-color: #142e36;
+    font-size : 25px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom:10px;
+    box-shadow: 0 2px 2px 0 #52747e;
+}
+
+main{
+    max-width: 600px;
+    align-items: center;    
+    margin-left : auto;
+    margin-right: auto;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    min-width: 600px;
+    max-width: 600px;
+    background-color: #f6fdff;
+
+    display : flex;
+    flex-direction : column;
+    align-items: left;
+
+    padding : 30px;
+    margin-top: 15px;
+
+    border : 1px solid #c9d9de;
+    box-shadow: 0 2px 2px 0 #52747e;
+    border-radius : 20px;
+
+}
+
+.gender-group:nth-child(2) {
+    margin : 12px;
+}
+
+.consent-check>label{ 
+    margin-top: 12px;
+    font-style: italic;
+    font-size: 14px;
+    color:#52747e;
+    box-shadow: none;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+form textarea{
+    max-width: 100%;
+    field-sizing: content;
+}
+
+form input, form select, form textarea {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 0.5px 1px #bac6ca;
+    margin-bottom: 12px;
+    padding: 5px;
+    padding-left: 10px;
+    align-items: left;
+}
+
+form option:first-of-type, select:invalid {
+    color: #52747e;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+form input[type="radio"], .consent-check input[type="checkbox"]{
+    /* margin-left: 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    box-shadow: none;
+}
+
+form button{
+    align-self: center;
+    background-color: #7496a0;
+    color : white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    min-width: 150px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 2px 0 #7496a0;
+}
+
+form button:hover{
+    background-color: #46636b;
+}
